@@ -1,0 +1,29 @@
+/* Style the Dashboard component */
+.dashboard {
+    width: 80%; /* Set a max width for the dashboard */
+    margin: auto; /* Center the dashboard */
+    padding: 20px;
+    background: #fff; /* White background for the dashboard */
+    border-radius: 8px; /* Rounded corners for the dashboard */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Simple shadow for depth */
+  }
+
+  /* Style for the date picker and dropdowns */
+  .date-picker-dropdowns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .date-picker-dropdowns .react-datepicker-wrapper {
+    margin-right: 10px;
+  }
+  
+  /* Dropdown styles */
+  .select-dropdown {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  

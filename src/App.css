@@ -1,38 +1,89 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: 'Arial', sans-serif; /* Use a sans-serif font */
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #fff; /* White background */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow */
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+.App-logo {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.chart-container {
+  width: 100%; /* Full width */
+  max-width: 800px; /* Maximum width of the chart */
+  margin: 20px auto; /* Center the chart with a margin on top and bottom */
+  padding: 20px; /* Padding around the chart */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners for a softer look */
+}
+
+.App-demo-button {
+  padding: 10px 20px;
+  background-color: #61dafb; /* Button color */
+  border: none;
+  border-radius: 5px;
+  color: #fff; /* Text color */
+  cursor: pointer;
+}
+
+/* Style for the subtitle */
+.App-subtitle {
+  margin: 40px 0; /* Increased top and bottom margin for more space */
+  font-size: 2.5em; /* Larger font size for feature title */
+  font-weight: bold; /* Bold font weight for emphasis */
+  color: #333; /* Dark color for contrast */
+  text-align: center; /* Center align the subtitle */
+}
+
+/* Style the main content area */
+.main-content {
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #ffffff; /* Light grey background */
+}
+
+/* Style the navigation tabs */
+.nav-tabs {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+/* Restyle the view toggle buttons */
+.view-toggle {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent; /* No background */
+  color: #333; /* Dark text color */
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none; /* No focus outline */
+  font-weight: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style for the active view toggle */
+.view-toggle.active {
+  border-bottom: 2px solid #333; /* Underline for active tab */
+  font-weight: bold; /* Make active tab text bold */
+  border-width: 2px; /* Double border width */
+  border-color: black; /* Double border color */
+}
+
+/* Optional: Style for hover effect on tabs */
+.view-toggle:hover {
+  background-color: #e8e8e8; /* Light background on hover */
 }

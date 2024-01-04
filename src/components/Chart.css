@@ -1,0 +1,15 @@
+/* Style for the chart container */
+.chart-container {
+    margin: 20px;
+    padding: 20px;
+    background: #f9f9f9; /* Light grey background */
+    border: 1px solid #e1e1e1; /* Light grey border */
+    border-radius: 4px; /* Rounded corners for the containers */
+  }
+  
+  /* Style for the chart */
+  .recharts-wrapper {
+    user-select: none; /* Prevent text selection */
+  }
+  
+  
